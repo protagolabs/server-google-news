@@ -91,8 +91,6 @@ The server implements the Model Context Protocol and exposes a Google News searc
 - `story_token`: Token for full coverage of a story
 - `section_token`: Token for specific sections
 
-For full API details, see the [Google News API Documentation](Google_News_API.md).
-
 # 🔧 Development
 
 ```bash
