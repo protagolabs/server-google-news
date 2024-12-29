@@ -1,5 +1,5 @@
 <div align="center">
- <h1>Google News MCP Server</h1>
+ <h1><img src="public/server-google-news.svg" width="80px"><br/>Google News MCP Server</h1>
  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white"/>
  <img src="https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white"/>
  <img src="https://img.shields.io/badge/MCP-Server-blue?style=flat"/>
