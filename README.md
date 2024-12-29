@@ -10,7 +10,9 @@
 A Model Context Protocol (MCP) server implementation that provides Google News search capabilities via SerpAPI integration. Automatically categorizes news results and supports multiple languages and regions.
 
 
-https://github.com/user-attachments/assets/a4ee153e-06f6-40bb-9dcc-95a63052d7ee
+
+https://github.com/user-attachments/assets/1cc71c27-f840-4c94-9ab5-460d84ba4779
+
 
 ![屏幕截图 2024-12-30 021446](https://github.com/user-attachments/assets/34985fac-a529-4aac-a77d-b0b93f70d0f7)
 
