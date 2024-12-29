@@ -9,7 +9,7 @@
 
 A Model Context Protocol (MCP) server implementation that provides Google News search capabilities via SerpAPI integration. Automatically categorizes news results and supports multiple languages and regions.
 
-
+English | [简体中文](./README_CN.md)
 
 https://github.com/user-attachments/assets/1cc71c27-f840-4c94-9ab5-460d84ba4779
 
@@ -43,6 +43,29 @@ Comprehensive error handling for API failures and invalid inputs, with helpful e
 ### 🌍 Language Support
 Automatic fallback to English for unsupported language codes with appropriate user notifications.
 
+# 🔑 SERP API Setup Guide
+
+Before getting started, you'll need to obtain a SERP API key. Here's how:
+
+1. Visit [SERP API website](https://serpapi.com/) and create an account
+
+2. After registration, go to your Dashboard:
+   - Locate the "API Key" section
+   - Copy your API key
+   - New users get 100 free API calls
+
+3. API Usage Details:
+   - Free tier: 100 searches per month
+   - Paid plans start at $50/month for 5000 searches
+   - Billing based on successful API calls
+   - Multiple payment methods: Credit Card, PayPal, etc.
+
+4. Usage Limits:
+   - Request Rate: 2 requests/second
+   - IP Restrictions: None
+   - Concurrent Requests: 5
+   - Response Cache Time: 1 hour
+
 # 🚀 Quick Start
 
 1. Install dependencies:
@@ -73,6 +96,17 @@ npm run build
 ```bash
 npm start
 ```
+
+## Troubleshooting
+
+1. Invalid API Key
+- Verify API key configuration in `claude_desktop_config.json`
+- Confirm API key is active in SERP API dashboard
+
+2. Request Failures
+- Check network connectivity
+- Verify API call quota hasn't been exceeded
+- Validate request parameter format
 
 # 💻 Tech Stack
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
@@ -106,4 +140,4 @@ npm run test
 
 # 📝 License
 
-This project is MIT licensed.
+This project is [MIT licensed](./LICENSE).
