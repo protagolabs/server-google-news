@@ -142,7 +142,7 @@ npm run test
 
 This project is [MIT licensed](./LICENSE).
 
-## 🙋‍♀ Author
+# 🙋‍♀ Author
 
 Created and maintained by [Chan Meng](https://chanmeng.live/).
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=normal&logo=github&logoColor=white)](https://github.com/ChanMeng666)
