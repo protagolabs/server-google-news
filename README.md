@@ -9,6 +9,8 @@
 
 A Model Context Protocol (MCP) server implementation that provides Google News search capabilities via SerpAPI integration. Automatically categorizes news results and supports multiple languages and regions.
 
+<a href="https://glama.ai/mcp/servers/dbx6imq4ef"><img width="380" height="200" src="https://glama.ai/mcp/servers/dbx6imq4ef/badge" alt="Google News Server MCP server" /></a>
+
 English | [简体中文](./README_CN.md)
 
 https://github.com/user-attachments/assets/1cc71c27-f840-4c94-9ab5-460d84ba4779
