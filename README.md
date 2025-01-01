@@ -11,8 +11,6 @@ A Model Context Protocol (MCP) server implementation that provides Google News s
 
 <a href="https://glama.ai/mcp/servers/dbx6imq4ef"><img width="380" height="200" src="https://glama.ai/mcp/servers/dbx6imq4ef/badge" alt="Google News Server MCP server" /></a>
 
-English | [简体中文](./README_CN.md)
-
 https://github.com/user-attachments/assets/1cc71c27-f840-4c94-9ab5-460d84ba4779
 
 
@@ -113,6 +111,32 @@ npm start
 - Check network connectivity
 - Verify API call quota hasn't been exceeded
 - Validate request parameter format
+
+# 📦 Installation
+
+You can install this package via npm:
+
+```bash
+# Using npm
+npm i @chanmeng666/google-news-server
+
+# Using yarn
+yarn add @chanmeng666/google-news-server
+
+# Using pnpm
+pnpm add @chanmeng666/google-news-server
+```
+
+Package Information:
+- Version: 1.0.0
+- Size: 17.1 kB
+- License: MIT
+- Runtime: Node.js
+- Required Dependencies: 2
+  - @modelcontextprotocol/sdk
+  - axios
+
+This package is designed to work with Claude Desktop and follows the Model Context Protocol (MCP) specifications.
 
 # 💻 Tech Stack
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
