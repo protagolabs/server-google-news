@@ -114,8 +114,6 @@ npm start
 
 # 📦 Installation
 
-You can install this package via npm:
-
 ```bash
 # Using npm
 npm i @chanmeng666/google-news-server
@@ -129,16 +127,7 @@ yarn add @chanmeng666/google-news-server
 pnpm add @chanmeng666/google-news-server
 ```
 
-Package Information:
-- Version: 1.0.0
-- Size: 17.1 kB
-- License: MIT
-- Runtime: Node.js
-- Required Dependencies: 2
-  - @modelcontextprotocol/sdk
-  - axios
-
-This package is designed to work with Claude Desktop and follows the Model Context Protocol (MCP) specifications.
+<img src="https://cdn.simpleicons.org/npm/CB3837" height="14"/> <a href="https://www.npmjs.com/package/@chanmeng666/google-news-server">@chanmeng666/google-news-server</a>
 
 # 💻 Tech Stack
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
