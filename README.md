@@ -114,6 +114,15 @@ npm start
 
 # 📦 Installation
 
+### Installing via Smithery
+
+To install Google News for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@chanmeng666/google-news-server):
+
+```bash
+npx -y @smithery/cli install @chanmeng666/google-news-server --client claude
+```
+
+### Manual Installation
 ```bash
 # Using npm
 npm i @chanmeng666/google-news-server
@@ -168,3 +177,4 @@ This project is [MIT licensed](./LICENSE).
 Created and maintained by [Chan Meng](https://chanmeng.live/).
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=normal&logo=github&logoColor=white)](https://github.com/ChanMeng666)
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=normal&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chanmeng666/)
+
