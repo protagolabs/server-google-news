@@ -114,7 +114,7 @@ npm start
 
 # 📦 Installation
 
-### Installing via Smithery
+## Installing via Smithery
 
 To install Google News for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@chanmeng666/google-news-server):
 
@@ -122,7 +122,18 @@ To install Google News for Claude Desktop automatically via [Smithery](https://s
 npx -y @smithery/cli install @chanmeng666/google-news-server --client claude
 ```
 
-### Manual Installation
+## Installing via mcp-get
+
+```bash
+npx @michaellatman/mcp-get@latest install @chanmeng666/google-news-server
+```
+
+> If you are using an old version of Windows PowerShell, you may need to run `Set-ExecutionPolicy Bypass -Scope Process` before this command.
+
+## Manual Installation
+
+<img src="https://cdn.simpleicons.org/npm/CB3837" height="14"/> <a href="https://www.npmjs.com/package/@chanmeng666/google-news-server">@chanmeng666/google-news-server</a>
+
 ```bash
 # Using npm
 npm i @chanmeng666/google-news-server
@@ -135,8 +146,6 @@ yarn add @chanmeng666/google-news-server
 # Using pnpm
 pnpm add @chanmeng666/google-news-server
 ```
-
-<img src="https://cdn.simpleicons.org/npm/CB3837" height="14"/> <a href="https://www.npmjs.com/package/@chanmeng666/google-news-server">@chanmeng666/google-news-server</a>
 
 # 💻 Tech Stack
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
