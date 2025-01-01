@@ -1,20 +1,19 @@
 {
-  "name": "google-news-server",
-  "version": "0.1.0",
+  "name": "@chanmeng666/google-news-server",
+  "version": "1.0.0",
   "description": "MCP server for Google News search via SerpAPI",
-  "private": true,
   "type": "module",
   "bin": {
-    "google-news-server": "./build/index.js"
+    "google-news-server": "./dist/index.js"
   },
   "files": [
-    "build"
+    "dist"
   ],
   "scripts": {
-    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+    "build": "tsc && node -e \"require('fs').chmodSync('dist/index.js', '755')\"",
     "prepare": "npm run build",
     "watch": "tsc --watch",
-    "start": "node build/index.js",
+    "start": "node dist/index.js",
     "dev": "ts-node-dev --respawn src/index.ts",
     "lint": "eslint src/**/*.ts",
     "test": "jest"

@@ -85,7 +85,7 @@ Modify your `claude_desktop_config.json` with the following content (adjust path
     "google-news": {
       "command": "D:\\Program\\nvm\\node.exe",
       "args": [
-        "D:\\github_repository\\path_to\\build\\index.js"
+        "D:\\github_repository\\path_to\\dist\\index.js"
       ],
       "env": {
         "SERP_API_KEY": "your-api-key"
