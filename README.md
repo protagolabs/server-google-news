@@ -68,6 +68,10 @@ Before getting started, you'll need to obtain a SERP API key. Here's how:
    - Concurrent Requests: 5
    - Response Cache Time: 1 hour
 
+# Solution for MCP Servers Connection Issues with NVM/NPM
+
+Click to view my configuration solution 👉 https://github.com/modelcontextprotocol/servers/issues/76
+
 # 🚀 Quick Start
 
 1. Install dependencies:
