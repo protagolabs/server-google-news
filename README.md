@@ -7,6 +7,10 @@
 </div>
 <br/>
 
+[![Star This Project](https://img.shields.io/github/stars/ChanMeng666/server-google-news.svg?style=social)](https://github.com/ChanMeng666/server-google-news/stargazers)
+
+<br/>
+
 A Model Context Protocol (MCP) server implementation that provides Google News search capabilities via SerpAPI integration. Automatically categorizes news results and supports multiple languages and regions.
 
 <a href="https://glama.ai/mcp/servers/dbx6imq4ef"><img width="380" height="200" src="https://glama.ai/mcp/servers/dbx6imq4ef/badge" alt="Google News Server MCP server" /></a>
