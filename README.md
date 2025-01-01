@@ -119,6 +119,8 @@ You can install this package via npm:
 ```bash
 # Using npm
 npm i @chanmeng666/google-news-server
+# or
+npm install @chanmeng666/google-news-server
 
 # Using yarn
 yarn add @chanmeng666/google-news-server
