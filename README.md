@@ -126,6 +126,8 @@ To install Google News for Claude Desktop automatically via [Smithery](https://s
 npx -y @smithery/cli install @chanmeng666/google-news-server --client claude
 ```
 
+[![smithery badge](https://smithery.ai/badge/@chanmeng666/google-news-server)](https://smithery.ai/server/@chanmeng666/google-news-server)
+
 ## Installing via mcp-get
 
 ```bash
