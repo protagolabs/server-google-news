@@ -1,0 +1,41 @@
+name: License Check
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  license-check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      
+      - name: Check License Header and Update LICENSE
+        uses: apache/skywalking-eyes/header@main
+        with:
+          mode: fix
+          token: ${{ secrets.GITHUB_TOKEN }}
+          config: .licenserc.yaml
+      
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        if: steps.license-check.outputs.changed == 'true'
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore: update license headers and year"
+          title: "chore: update license headers and year"
+          body: |
+            Automated changes:
+            - Updated license headers
+            - Updated license year
+          branch: update-license
+          base: main
+          delete-branch: true
