@@ -20,17 +20,39 @@ jobs:
         run: |
           CURRENT_YEAR=$(date +%Y)
           echo "CURRENT_YEAR=$CURRENT_YEAR" >> $GITHUB_ENV
+          
+          # 调试输出
+          echo "Current content of LICENSE file:"
+          cat LICENSE
+          echo "Current year: $CURRENT_YEAR"
+          
+          # 更新年份 - 支持多种格式
           if [ -f LICENSE ]; then
-            sed -i "s/Copyright (c) [0-9]\{4\}/Copyright (c) ${CURRENT_YEAR}/" LICENSE
+            # 更新 "Copyright (c) YYYY" 格式
+            sed -i -E "s/Copyright \(c\) [0-9]{4}/Copyright (c) ${CURRENT_YEAR}/" LICENSE
+            
+            # 更新 "Copyright (c) YYYY-YYYY" 格式
+            sed -i -E "s/Copyright \(c\) [0-9]{4}-[0-9]{4}/Copyright (c) ${CURRENT_YEAR}/" LICENSE
+            
+            # 更新 "Copyright YYYY" 格式
+            sed -i -E "s/Copyright [0-9]{4}/Copyright ${CURRENT_YEAR}/" LICENSE
+            
+            echo "Updated content of LICENSE file:"
+            cat LICENSE
+          else
+            echo "LICENSE file not found!"
           fi
           
       - name: Check for changes
         id: changes
         run: |
           if git diff --quiet; then
+            echo "No changes detected"
             echo "changed=false" >> $GITHUB_OUTPUT
           else
+            echo "Changes detected"
             echo "changed=true" >> $GITHUB_OUTPUT
+            git diff
           fi
           
       - name: Create Pull Request
@@ -39,10 +61,12 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "chore: update license year to ${{ env.CURRENT_YEAR }}"
-          title: "chore: update license year"
+          title: "chore: update license year to ${{ env.CURRENT_YEAR }}"
           body: |
             Automated changes:
-            - Updated copyright year in LICENSE file to current year
+            - Updated copyright year in LICENSE file to current year (${{ env.CURRENT_YEAR }})
+            
+            Please review the changes and merge if appropriate.
           branch: update-license-year
           base: main
           delete-branch: true
