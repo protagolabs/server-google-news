@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
     steps:
       - uses: actions/checkout@v2
         with:
@@ -17,14 +18,26 @@ jobs:
           
       - name: Update year in LICENSE
         run: |
-          # 获取当前年份
           CURRENT_YEAR=$(date +%Y)
-          # 更新 LICENSE 文件中的年份
-          sed -i "s/Copyright (c) [0-9]\{4\}/Copyright (c) ${CURRENT_YEAR}/" LICENSE
+          echo "CURRENT_YEAR=$CURRENT_YEAR" >> $GITHUB_ENV
+          if [ -f LICENSE ]; then
+            sed -i "s/Copyright (c) [0-9]\{4\}/Copyright (c) ${CURRENT_YEAR}/" LICENSE
+          fi
+          
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
           
       - name: Create Pull Request
+        if: steps.changes.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@v5
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "chore: update license year to ${{ env.CURRENT_YEAR }}"
           title: "chore: update license year"
           body: |
