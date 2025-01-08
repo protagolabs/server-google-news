@@ -15,6 +15,12 @@ A Model Context Protocol (MCP) server implementation that provides Google News s
 
 <a href="https://glama.ai/mcp/servers/dbx6imq4ef"><img width="380" height="200" src="https://glama.ai/mcp/servers/dbx6imq4ef/badge" alt="Google News Server MCP server" /></a>
 
+<br/>
+
+[![Explore GitHub Profile README Generator](https://gradient-svg-generator.vercel.app/?text=👉+Try+It+Now!+👈&height=40&template=pride-rainbow)](https://smithery.ai/server/@chanmeng666/google-news-server)
+
+<br/>
+
 https://github.com/user-attachments/assets/1cc71c27-f840-4c94-9ab5-460d84ba4779
 
 
