@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import 'dotenv/config';
 import { Server } from '@modelcontextprotocol/sdk/server/index.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
 import {
@@ -18,7 +19,7 @@ import {
 } from './types.js';
 
 // SerpAPI配置
-const SERP_API_KEY = '8c63b70cc9f322c9a9111b36c9c7a0f09dd345cd073e63bffd4dbc4395959f10';
+const SERP_API_KEY = process.env.SERP_API_KEY;
 const SERP_API_BASE_URL = 'https://serpapi.com/search';
 
 class GoogleNewsServer {
@@ -26,6 +27,10 @@ class GoogleNewsServer {
   private axiosInstance: import('axios').AxiosInstance;
 
   constructor() {
+    if (!process.env.SERP_API_KEY) {
+      throw new Error('SERP_API_KEY environment variable is required');
+    }
+
     this.server = new Server(
       { name: 'google-news-server', version: '1.0.0' },
       { capabilities: { tools: {} } }
