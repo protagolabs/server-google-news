@@ -1,13 +1,18 @@
 <div align="center">
  <h1><img src="public/server-google-news.svg" width="80px"><br/>Google News MCP Server</h1>
+ <a href="https://github.com/ChanMeng666/server-google-news/stargazers"><img src="https://img.shields.io/github/stars/ChanMeng666/server-google-news.svg?style=social"></a>
  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white"/>
  <img src="https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white"/>
  <img src="https://img.shields.io/badge/MCP-Server-blue?style=flat"/>
  <img src="https://img.shields.io/badge/License-MIT-brightgreen?style=flat"/>
 </div>
+
 <br/>
 
-[![Star This Project](https://img.shields.io/github/stars/ChanMeng666/server-google-news.svg?style=social)](https://github.com/ChanMeng666/server-google-news/stargazers)
+<div align="center">
+  <a href="https://www.pulsemcp.com/servers/chanmeng666-google-news"><img src="https://www.pulsemcp.com/badge/top-pick/chanmeng666-google-news" width="400" alt="PulseMCP Badge"></a>
+</div>
+
 
 <br/>
 
