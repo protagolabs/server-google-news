@@ -92,7 +92,12 @@ Click to view my configuration solution 👉 https://github.com/modelcontextprot
 npm install
 ```
 
-2. Configure environment:
+2. Build the server:
+```bash
+npm run build
+```
+
+3. Configure environment:
 Modify your `claude_desktop_config.json` with the following content (adjust paths according to your system):
 ```json
     "google-news": {
@@ -104,11 +109,6 @@ Modify your `claude_desktop_config.json` with the following content (adjust path
         "SERP_API_KEY": "your-api-key"
       }
     }
-```
-
-3. Build the server:
-```bash
-npm run build
 ```
 
 4. Start the server:
