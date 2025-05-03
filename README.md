@@ -127,6 +127,15 @@ npm start
 - Verify API call quota hasn't been exceeded
 - Validate request parameter format
 
+
+
+## Running evals
+
+The evals package loads an mcp client that then runs the index.ts file, so there is no need to rebuild between tests. You can load environment variables by prefixing the npx command. Full documentation can be found [here](https://www.mcpevals.io/docs).
+
+```bash
+OPENAI_API_KEY=your-key  npx mcp-eval src/evals/evals.ts src/index.ts
+```
 # 📦 Installation
 
 ## Installing via Smithery
