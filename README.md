@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/chanmeng666-server-google-news-badge.png)](https://mseep.ai/app/chanmeng666-server-google-news)
+
 <div align="center">
  <h1><img src="public/server-google-news.svg" width="80px"><br/>Google News MCP Server</h1>
  <a href="https://github.com/ChanMeng666/server-google-news/stargazers"><img src="https://img.shields.io/github/stars/ChanMeng666/server-google-news.svg?style=social"></a>
