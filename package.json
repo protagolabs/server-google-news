@@ -22,7 +22,7 @@
     "@modelcontextprotocol/sdk": "^1.0.0",
     "axios": "^1.7.9",
     "dotenv": "^17.0.0",
-    "mcp-evals": "^1.0.18"
+    "mcp-evals": "^2.0.0"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
